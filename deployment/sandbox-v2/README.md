@@ -44,6 +44,8 @@ It is possible to bring up MOSIP modules with lesser VMs as below.  However, do 
 Before installing MOSIP modules you will have to set up your VMs as below:
 1. Install above mentioned OS on all machines
 1. Create user 'mosipuser' on console machine with password-less `sudo su`. 
+1. Clone proid-infra (https://github.com/ICTASL/proid-infra.git) repository to console machine.
+1. go to  proid-infra/deployment/sandbox-v2/
 1. `hostname` on all machines must match hostnames in `hosts.ini`.  Set the same with
     ```
     $ sudo hostnamectl set-hostname <hostname>
